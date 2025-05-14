@@ -1,6 +1,6 @@
 # Laravel Blog - Workshop Debugging
 
-![Blog Screenshot](https://via.placeholder.com/1200x600/4f46e5/ffffff?text=Laravel+Blog+Workshop)
+![Blog Screenshot](https://beerandcode.com.br/assets/logo.png)
 
 Um blog completo desenvolvido com Laravel, Tailwind CSS e Alpine.js, criado especificamente para o Workshop de Debugging.
 
