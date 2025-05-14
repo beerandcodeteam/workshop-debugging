@@ -10,6 +10,8 @@ use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
+use Bugsnag\BugsnagLaravel\Facades\Bugsnag;
+
 Route::get('/', [BlogHomeController::class, 'index'])->name('home');
 
 Route::get('/blog/categories/{category:slug}', [BlogCategoryController::class, 'show'])->name('blog.category');
@@ -35,6 +37,10 @@ Route::middleware('auth')->group(function () {
     // Comments
     Route::resource('comments', CommentController::class);
     Route::post('/comments/{comment}/toggle-approval', [CommentController::class, 'toggleApproval'])->name('comments.toggle-approval');
+});
+
+Route::get('/teste', function (){
+    Bugsnag::notifyException(new RuntimeException("Test error"));
 });
 
 require __DIR__.'/auth.php';
