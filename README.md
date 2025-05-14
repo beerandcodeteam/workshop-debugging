@@ -132,7 +132,6 @@ Este projeto foi configurado com algumas "armadilhas" intencionais para praticar
 ## Ferramentas recomendadas para debugging
 
 - Laravel Debugbar: `composer require barryvdh/laravel-debugbar --dev`
-- Clockwork: `composer require itsgoingd/clockwork --dev`
 - Laravel Telescope: `composer require laravel/telescope --dev`
 - Ray: `composer require spatie/laravel-ray --dev`
 - XDebug: Configuração no PHP
